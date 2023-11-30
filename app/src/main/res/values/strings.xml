@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">DeepLinking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="shortcut_label">Your Short Label</string>
+    <string name="shortcut_long_label">Destination 3</string>
+
+    <string name="shortcut_label1">Your Short Label</string>
+    <string name="shortcut_long_label1">Destination 1</string>
+
+    <string name="shortcut_label2">Your Short Label</string>
+    <string name="shortcut_long_label2">Destination 2</string>
+</resources>

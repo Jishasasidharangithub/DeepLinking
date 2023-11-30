@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.image.deeplinking.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start">
+        <action
+            android:id="@+id/action_startFragment_to_deepLinkFragment2"
+            app:destination="@id/deepLinkFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_destination2Fragment"
+            app:destination="@id/destination2Fragment" />
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="androidgeek.co/product1" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/deepLinkFragment"
+        android:name="com.image.deeplinking.DeepLinkFragment"
+        android:label="fragment_deep_link"
+        tools:layout="@layout/fragment_deep_link">
+        <!--<argument
+            android:name="productName" />-->
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="androidgeek.co/product" />
+    </fragment>
+    <fragment
+        android:id="@+id/destination2Fragment"
+        android:name="com.image.deeplinking.destination2Fragment"
+        android:label="fragment_destination2"
+        tools:layout="@layout/fragment_destination2" >
+        <deepLink
+            android:id="@+id/deepLink"
+            app:uri="androidgeek.co/product2" />
+    </fragment>
+
+</navigation>
